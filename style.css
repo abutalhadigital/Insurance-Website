@@ -1,0 +1,130 @@
+:root {
+  --primary-light: #1fa888;
+  --primary-dark: #09384d;
+}
+
+* {
+  font-family: Montserrat;
+}
+/* 
+                    HEADER   
+*/
+
+.logo {
+  color: var(--primary-dark);
+}
+.nav-item ul li a {
+  cursor: pointer;
+  color: var(--primary-dark);
+}
+.quote {
+  color: var(--primary-dark);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* 
+                  HERO SECTION
+ */
+
+.hero {
+  margin-top: 10px;
+  background-image: url(./img/background1.png);
+  height: 730px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 40px;
+  color: var(--primary-dark);
+  padding-top: 60px;
+}
+
+.color-text {
+  color: var(--primary-light);
+}
+.hero-heading {
+  font-size: 52px;
+  font-weight: bold;
+  padding: 0px 100px;
+}
+.hero-text {
+}
+
+.hero-btn {
+  border: none;
+  height: 40px;
+  width: 150px;
+  border-radius: 10px;
+  background-color: var(--primary-dark);
+  color: white;
+  font-size: 18px;
+}
+.hero-form {
+  background-color: #ffffff;
+  height: 160px;
+  border-radius: 40px;
+  margin-top: 90px;
+  display: flex;
+  padding-left: 60px;
+  box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.13);
+}
+.hero-form button {
+  border: none;
+  height: 60px;
+  width: 180px;
+  border-radius: 10px;
+  background-color: var(--primary-light);
+  color: white;
+  font-size: 22px;
+  margin: auto;
+}
+
+.hero-form form div label {
+  color: var(--primary-dark);
+  font-size: 18px;
+}
+
+.hero-form form div input {
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  height: 50px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .hero{
+        padding-top: 0px;
+    }
+  .hero-heading {
+    font-size: 35px;
+    font-weight: bold;
+    padding: 0px 00px;
+  }
+  .hero-form {
+    height: 450px;
+    border-radius: 40px;
+    margin-top: 20px;
+    padding-left: 20px;
+  }
+  .hero-form button {
+    margin: 10px;
+  }
+}
+
+
+
+/* 
+             HERO BOTTOM 
+*/
+
+.hero-bottom{
+  margin-top: 100px;
+  background-color: #09384d;
+  
+}
+
+@media only screen and (max-width: 1000px) {
+  .hero-bottom{
+    margin-top: 400px;
+  }
+}
