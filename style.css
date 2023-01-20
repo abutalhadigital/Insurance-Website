@@ -1,6 +1,7 @@
 :root {
   --primary-light: #1fa888;
   --primary-dark: #09384d;
+  --main-background:#fafafa;
 }
 
 * {
@@ -8,12 +9,18 @@
 }
 
 body {
-  background-color: #fafafa;
+  background-color: var(--main-background);
 }
+
 /* 
                                  HEADER   
 */
-
+button:hover{
+  opacity: .9;
+}
+button:active{
+  opacity: .7;
+}
 .logo {
   color: var(--primary-dark);
 }
@@ -87,6 +94,7 @@ body {
 .hero-form form div label {
   color: var(--primary-dark);
   font-size: 18px;
+  font-weight: 600;
 }
 
 .hero-form form div input {
@@ -133,8 +141,17 @@ body {
   }
 }
 
+/* 
+
+                            SOLUTION SECTION 
+
+*/
+.solutions {
+  margin-top: 20px;
+}
+
 .solutions h1 {
-  font-size: 44px;
+  font-size: 45px;
   font-weight: bold;
   color: var(--primary-dark);
 }
@@ -142,10 +159,9 @@ body {
 .solutions p {
   padding-top: 10px;
   color: #6f8893;
+  font-size: 18px;
 }
 
-.solutoin-card {
-}
 .solutoin-card > div {
   height: 400px;
   width: 400px;
@@ -186,7 +202,7 @@ body {
   color: var(--primary-light);
 }
 
-.icon-dark >i{
+.icon-dark > i {
   color: white;
 }
 
@@ -204,5 +220,322 @@ body {
 @media only screen and (max-width: 1000px) {
   .solutions h1 {
     font-size: 34px;
+    color: #09384d;
+  }
+}
+
+/* 
+                   SERVICESS
+ */
+
+.services {
+  position: relative;
+  background-color: var(--primary-dark);
+  width: 100%;
+  height: 700px;
+  margin-top: 150px;
+  border-radius: 40px;
+  overflow: hidden;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: -1;
+}
+
+.background-ffect-1 {
+  top: -150px;
+  left: -150px;
+  height: 400px;
+  width: 400px;
+  background-color: var(--primary-light);
+  position: absolute;
+  filter: blur(200px);
+}
+
+.background-ffect-2 {
+  bottom: -150px;
+  right: -150px;
+  height: 400px;
+  width: 400px;
+  background-color: var(--primary-light);
+  position: absolute;
+  filter: blur(200px);
+}
+
+.services h1 {
+  font-size: 45px;
+  font-weight: bold;
+  padding-left: 15px;
+  padding-right: 15px;
+  z-index: 10;
+}
+
+.services p {
+  max-width: 600px;
+  padding-top: 20px;
+  opacity: 0.5;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .services {
+    padding-top: 50px;
+  }
+}
+/* 
+                  SERVICESS CARDS
+*/
+.sevicess-card {
+  margin-top: -380px;
+  z-index: 10;
+}
+
+.sevice-card {
+  padding: 10px;
+}
+
+.sevice-card > div {
+  width: 400px;
+  padding: 0px 10px;
+}
+.sevice-card > div > div {
+  width: 100%;
+  background-color: #ffffff;
+  margin-top: 100px;
+  border-radius: 20px;
+}
+
+.sevice-icon {
+  margin-top: -100px;
+}
+
+.sevice-card h1 {
+  color: var(--primary-dark);
+  font-size: 50px;
+  font-weight: bold;
+  padding: 20px 0px;
+}
+.sml-text {
+  font-size: 20px;
+  opacity: 0.5;
+  font-weight: 400;
+}
+.sevice-card h4 {
+  font-size: 28px;
+  color: var(--primary-dark);
+  padding-top: 30px;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
+.sevice-card ul {
+}
+
+.sevice-card li {
+  list-style: none;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  opacity: 0.7;
+}
+
+.sevice-card li:before {
+  content: "·";
+  font-size: 80px;
+  vertical-align: middle;
+  line-height: 20px;
+  padding-bottom: 15px;
+  padding-right: 5px;
+}
+
+.sevice-card button {
+  width: 80%;
+  height: 50px;
+  margin: 20px auto;
+  background-color: #f4f4f4;
+  color: var(--primary-dark);
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+}
+
+.highlight h1 {
+  color: var(--primary-light);
+}
+
+.sml-text {
+  color: var(--primary-dark);
+  opacity: 0.5;
+}
+
+.highlight button{
+  background-color: var(--primary-light);
+  color: white;
+}
+
+
+/* 
+                BENEFITS SECTION 
+*/
+
+.benefits{
+  margin: 70px 0px;
+  padding: 0px 20px;
+}
+
+
+.benefits-tile{
+  height: 120px;
+  position: relative;
+  background-color: white;
+  color: var(--primary-dark);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px  0px  ;
+  border: 2px solid rgba(128, 128, 128, 0.1);
+  padding: 10px;
+}
+
+.benefits-tile-active{
+  height: 120px;
+  position: relative;
+  background-color: var(--primary-dark);
+  color: white;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px  0px  ;
+}
+.benefits-tile h3{
+  margin: auto;
+  font-size: 32px;
+}
+
+.number{
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -12px;
+  right: -12px;
+  background-color: var(--primary-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 9px solid var(--main-background);
+  font-size: 20px;
+  color: white;
+}
+
+.benefits-details{
+  margin: 40px 0px;
+  padding-left: 70px;
+}
+
+.benefits-details >h1{
+  font-weight: bold;
+  font-size: 45px;
+  color: var(--primary-dark);
+  line-height: 70px;
+}
+.benefits-details >p{
+  font-size: 20px;
+  padding: 30px 0px;
+  opacity: .5;
+}
+
+.benefits-check{
+  display: flex;
+  padding: 30px 10px;
+
+}
+.benefits-check p{
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--primary-dark);
+  opacity: .6;
+}
+.benefits-check i{
+  color: #4caae9;
+
+}
+@media only screen and (max-width: 1000px) {
+  .benefits-details{
+    padding: 10px;
+  }
+  .benefits-details >h1{
+  line-height: 45px;
+  }
+}
+
+
+/* 
+                     FOOTER SECTION 
+*/
+
+
+
+.footer{
+  position: relative;
+  background-color: var(--primary-dark);
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  padding: 300px 100px 10px 100px;
+  align-items: center;
+  z-index: 1;
+  color: var(--main-background);
+
+}
+
+.divider{
+  margin-top: 10px;
+  height: 2px;
+  background-color: var(--main-background);
+  width: 100%;
+  opacity: .2;
+}
+.divider-big{
+  margin-top: 90px;
+  height: 2px;
+  background-color: var(--main-background);
+  width: 100%;
+  opacity: .2;
+}
+
+
+.light-text{
+  opacity: .5;
+}
+.footer-icon{
+  font-size: 32px;
+  font-weight: bold;
+}
+@media only screen and (max-width: 1000px) {
+  .footer{
+    position: relative;
+    background-color: var(--primary-dark);
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    padding: 200px 10px 10px 10px;
+    align-items: center;
+    z-index: 1;
+    color: var(--main-background);
+  
+  }
+  .divider-big{
+    margin-top: 50px;
+    height: 2px;
+    background-color: var(--main-background);
+    width: 100%;
+    opacity: .2;
   }
 }
