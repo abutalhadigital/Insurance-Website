@@ -1,7 +1,7 @@
 :root {
   --primary-light: #1fa888;
   --primary-dark: #09384d;
-  --main-background:#fafafa;
+  --main-background: #fafafa;
 }
 
 * {
@@ -15,11 +15,11 @@ body {
 /* 
                                  HEADER   
 */
-button:hover{
-  opacity: .9;
+button:hover {
+  opacity: 0.9;
 }
-button:active{
-  opacity: .7;
+button:active {
+  opacity: 0.7;
 }
 .logo {
   color: var(--primary-dark);
@@ -372,23 +372,21 @@ button:active{
   opacity: 0.5;
 }
 
-.highlight button{
+.highlight button {
   background-color: var(--primary-light);
   color: white;
 }
-
 
 /* 
                 BENEFITS SECTION 
 */
 
-.benefits{
+.benefits {
   margin: 70px 0px;
   padding: 0px 20px;
 }
 
-
-.benefits-tile{
+.benefits-tile {
   height: 120px;
   position: relative;
   background-color: white;
@@ -397,12 +395,12 @@ button:active{
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 40px  0px  ;
+  margin: 40px 0px;
   border: 2px solid rgba(128, 128, 128, 0.1);
   padding: 10px;
 }
 
-.benefits-tile-active{
+.benefits-tile-active {
   height: 120px;
   position: relative;
   background-color: var(--primary-dark);
@@ -411,14 +409,14 @@ button:active{
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 40px  0px  ;
+  margin: 40px 0px;
 }
-.benefits-tile h3{
+.benefits-tile h3 {
   margin: auto;
   font-size: 32px;
 }
 
-.number{
+.number {
   height: 70px;
   width: 70px;
   border-radius: 50%;
@@ -434,55 +432,128 @@ button:active{
   color: white;
 }
 
-.benefits-details{
+.benefits-details {
   margin: 40px 0px;
   padding-left: 70px;
 }
 
-.benefits-details >h1{
+.benefits-details > h1 {
   font-weight: bold;
   font-size: 45px;
   color: var(--primary-dark);
   line-height: 70px;
 }
-.benefits-details >p{
+.benefits-details > p {
   font-size: 20px;
   padding: 30px 0px;
-  opacity: .5;
+  opacity: 0.5;
 }
 
-.benefits-check{
+.benefits-check {
   display: flex;
   padding: 30px 10px;
-
 }
-.benefits-check p{
+.benefits-check p {
   font-size: 20px;
   font-weight: bold;
   color: var(--primary-dark);
-  opacity: .6;
+  opacity: 0.6;
 }
-.benefits-check i{
+.benefits-check i {
   color: #4caae9;
-
 }
 @media only screen and (max-width: 1000px) {
-  .benefits-details{
+  .benefits-details {
     padding: 10px;
   }
-  .benefits-details >h1{
-  line-height: 45px;
+  .benefits-details > h1 {
+    font-size: 32px;
+    line-height: 45px;
   }
 }
+/* 
+                    TESTIMONIALS 
+*/
 
+.testimonial {
+  min-height: 900px;
+  background-color: white;
+  padding: 100px 20px;
+  margin-bottom: -150px;
+}
 
+.testimonial h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 1000px) {
+  .testimonial {
+    padding: 40px 20px;
+  }
+  .testimonial h1 {
+    font-size: 32px;
+  }
+}
+/* 
+                     TOP FOOTER
+*/
+.top-footer {
+  min-height: 300px;
+  width: 100%;
+  background-color: var(--main-background);
+  position: relative;
+  overflow: hidden;
+  border-radius: 40px;
+  margin-bottom: -150px;
+  z-index: 10;
+  box-shadow: 0px 0px 20px 10px rgba(128, 128, 128, 0.119);
+  padding: 20px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.top-footer h1 {
+  font-size: 45px;
+  font-weight: bold;
+  z-index: 20;
+}
+.top-footer button {
+  margin: 0px 20px;
+  height: 80px;
+  width: 200px;
+  background-color: var(--primary-light);
+  border: none;
+  border-radius: 10px;
+  color: var(--main-background);
+  font-size: 22px;
+  z-index: 20;
+}
+
+.background-ffect-3 {
+  top: -150px;
+  right: -150px;
+  height: 400px;
+  width: 400px;
+  background-color: rgb(255, 255, 215);
+  position: absolute;
+  filter: blur(200px);
+}
+.background-ffect-4 {
+  bottom: -150px;
+  left: -150px;
+  height: 400px;
+  width: 400px;
+  background-color: rgb(225, 248, 255);
+  position: absolute;
+  filter: blur(200px);
+}
 /* 
                      FOOTER SECTION 
 */
 
-
-
-.footer{
+.footer {
   position: relative;
   background-color: var(--primary-dark);
   width: 100%;
@@ -492,34 +563,33 @@ button:active{
   align-items: center;
   z-index: 1;
   color: var(--main-background);
-
 }
 
-.divider{
+.divider {
   margin-top: 10px;
   height: 2px;
   background-color: var(--main-background);
   width: 100%;
-  opacity: .2;
+  opacity: 0.2;
 }
-.divider-big{
+.divider-big {
   margin-top: 90px;
   height: 2px;
   background-color: var(--main-background);
   width: 100%;
-  opacity: .2;
+  opacity: 0.2;
 }
 
-
-.light-text{
-  opacity: .5;
+.light-text {
+  opacity: 0.5;
 }
-.footer-icon{
+.footer-icon {
   font-size: 32px;
   font-weight: bold;
+  z-index: 20;
 }
 @media only screen and (max-width: 1000px) {
-  .footer{
+  .footer {
     position: relative;
     background-color: var(--primary-dark);
     width: 100%;
@@ -529,13 +599,22 @@ button:active{
     align-items: center;
     z-index: 1;
     color: var(--main-background);
-  
   }
-  .divider-big{
+  .divider-big {
     margin-top: 50px;
     height: 2px;
     background-color: var(--main-background);
     width: 100%;
-    opacity: .2;
+    opacity: 0.2;
+  }
+  .top-footer h1 {
+    font-size: 32px;
   }
 }
+
+
+
+
+
+
+
